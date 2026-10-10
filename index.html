@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kishore | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #020617;
+            padding: 20px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Common Section Style */
+        section {
+            padding: 60px 10%;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        /* Home Section */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 12px 0;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h3 {
+            color: #cbd5e1;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            width: fit-content;
+            background: #38bdf8;
+            color: #020617;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* Cards */
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #1e293b;
+            border: 1px solid #38bdf8;
+            padding: 10px 16px;
+            border-radius: 20px;
+        }
+
+        /* Meme Section */
+        .meme-card {
+            max-width: 500px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .meme-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #38bdf8;
+        }
+
+        /* Contact */
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 25px;
+            color: #cbd5e1;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Kishore.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#memes">Memes 😂</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h3>Hello, welcome to my portfolio!</h3>
+
+        <h1>I'm <span>Kishore</span></h1>
+
+        <h3>Engineering Student | Aspiring Software Developer</h3>
+
+        <p>
+            I am a first-year engineering student at KPRIET.
+            I am interested in programming, web development,
+            artificial intelligence, and modern technology.
+            I am learning new skills and working towards
+            becoming a successful software developer.
+        </p>
+
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="card">
+            <p>
+                My name is Kishore. I am an enthusiastic
+                engineering student who enjoys learning about
+                computers and technology. As a beginner in
+                programming, I am building my knowledge step
+                by step and improving my problem-solving skills.
+                My ambition is to become a software developer
+                and create useful applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>My Education</h2>
+
+        <div class="card">
+            <h3>KPRIET</h3>
+
+            <p>
+                KPR Institute of Engineering and Technology
+            </p>
+
+            <p>First-Year Engineering Student</p>
+
+            <p>Coimbatore, Tamil Nadu, India</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>C Programming</span>
+            <span>Problem Solving</span>
+            <span>Learning AI</span>
+        </div>
+
+        <p style="margin-top: 20px; color: #cbd5e1;">
+            I am improving my skills through regular practice
+            and continuous learning.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="card">
+            <h3>1. Personal Portfolio Website</h3>
+
+            <p>
+                A personal website developed using HTML and CSS
+                to showcase my profile, education, skills,
+                and projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. AI Smart Parking System</h3>
+
+            <p>
+                A project concept that uses a camera and
+                artificial intelligence to detect available
+                parking spaces and display the results on a
+                screen at the parking entrance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Agro Cooling Roof</h3>
+
+            <p>
+                A model exploring the use of agricultural waste
+                materials in roof panels to help reduce heat
+                entering a building.
+            </p>
+        </div>
+    </section>
+
+    <!-- Meme Section -->
+    <section id="memes">
+        <h2>😂 Meme Corner</h2>
+
+        <div class="card meme-card">
+            <h3>When the manager asks about our project!</h3>
+
+            <img
+                src="memes.jpg"
+                alt="Tamil comedy meme about a project"
+                class="meme-image"
+            >
+
+            <p>
+                "Karumam illanga... namba project gi!" 😂
+            </p>
+
+            <p>
+                Every engineering student's project life! 😅
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="card contact">
+            <p><strong>Name:</strong> Kishore</p>
+
+            <p><strong>College:</strong> KPRIET</p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:YOUR_EMAIL@example.com">
+                    YOUR_EMAIL@example.com
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Kishore | Personal Portfolio</p>
+        <p>Designed and developed by Kishore 💙</p>
+    </footer>
+
+</body>
+</html>
